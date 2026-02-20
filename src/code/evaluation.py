@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import xgboost
 
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_error, r2_score
 
 
 if __name__ == "__main__":
@@ -16,13 +16,18 @@ if __name__ == "__main__":
     with tarfile.open(model_path) as tar:
         tar.extractall(path=".")
 
-    model = pickle.load(open("xgboost-model", "rb"))
+    #model = pickle.load(open("xgboost-model", "rb"))
+    #model = pickle.load(open("model_algo-1", "rb"))
+    model = xgboost.Booster()
+    #model.load_model("model_algo-1")
+    model.load_model("xgboost-model")
+    
 
-    test_path = "/opt/ml/processing/test/test.csv"
+    test_path = "/opt/ml/processing/test/test_data.csv"
     df = pd.read_csv(test_path, header=None)
 
-    y_test = df.iloc[:, 0].to_numpy()
-    df.drop(df.columns[0], axis=1, inplace=True)
+    y_test = df.iloc[:, -1].to_numpy()
+    df.drop(df.columns[-1], axis=1, inplace=True)
 
     X_test = xgboost.DMatrix(df.values)
 
@@ -30,6 +35,9 @@ if __name__ == "__main__":
 
     mse = mean_squared_error(y_test, predictions)
     std = np.std(y_test - predictions)
+    
+    r2 = r2_score(y_test, predictions)
+    
     report_dict = {
         "regression_metrics": {
             "mse": {
@@ -37,8 +45,7 @@ if __name__ == "__main__":
                 "standard_deviation": std
             },
             "r2": {
-                "value": r2,
-                "standard_deviation": r2_std
+                "value": r2
             },
         },
     }
