@@ -4,7 +4,7 @@
 
 This project implements an end-to-end MLOps pipeline for predicting combined cycle power plant energy output (CO and NOx emissions) using AWS SageMaker. The pipeline demonstrates production-ready machine learning workflows including data preprocessing, feature engineering, model training, CI/CD automation, model monitoring, and real-time inference dashboards.
 
-**Dataset:** CCPP CO and NOx Emission Data Set (36,733 instances, 11 sensor measurements)
+**Dataset:** CCPP CO and NOx Emission Data Set (36,733 instances, 11 sensor measurements),Turkey Holidays,Full Weather Data (2011-2015) 
 **Source:** UCI Machine Learning Repository
 **Location:** Turkey (2011-2015)
 **Team:** USD MS AAI 540 - Team 1
