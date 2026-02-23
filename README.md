@@ -140,9 +140,9 @@ flowchart LR
 
 ```mermaid
 graph LR
-    A[Athena Query] --> B[Train Data<br/>40%]
-    A --> C[Validation<br/>40%]
-    A --> D[Test<br/>20%]
+    A[Athena Query] --> B[Train Data<br/>50%]
+    A --> C[Validation<br/>20%]
+    A --> D[Test<br/>30%]
     B --> E[XGBoost<br/>Training]
     C --> E
     E --> F[Model Artifact<br/>S3]
