@@ -1,10 +1,10 @@
-# Gas Turbine Energy Prediction MLOps Pipeline
+# Combined Cycle Power Plant (CCPP) Energy Prediction MLOps Pipeline
 
 ## 1. Overview
 
-This project implements an end-to-end MLOps pipeline for predicting gas turbine energy output (CO and NOx emissions) using AWS SageMaker. The pipeline demonstrates production-ready machine learning workflows including data preprocessing, feature engineering, model training, CI/CD automation, model monitoring, and real-time inference dashboards.
+This project implements an end-to-end MLOps pipeline for predicting combined cycle power plant energy output (CO and NOx emissions) using AWS SageMaker. The pipeline demonstrates production-ready machine learning workflows including data preprocessing, feature engineering, model training, CI/CD automation, model monitoring, and real-time inference dashboards.
 
-**Dataset:** Gas Turbine CO and NOx Emission Data Set (36,733 instances, 11 sensor measurements)
+**Dataset:** CCPP CO and NOx Emission Data Set (36,733 instances, 11 sensor measurements)
 **Source:** UCI Machine Learning Repository
 **Location:** Turkey (2011-2015)
 **Team:** USD MS AAI 540 - Team 1
