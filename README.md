@@ -130,7 +130,7 @@ flowchart LR
 | `7b_Xgboost_regression.ipynb` | XGBoost | SageMaker XGBoost 1.7-1 | R² = 0.987, MSE = 2.72 |
 
 **Training Configuration:**
-- **Train/Val/Test Split:** 40% / 40% / 20%
+- **Train/Val/Test Split:** 50% / 20% / 30%
 - **Instance Type:** ml.m5.large
 - **XGBoost Hyperparameters:**
   - `objective`: reg:squarederror
