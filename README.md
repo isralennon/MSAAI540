@@ -356,7 +356,7 @@ graph LR
 
 ## 11. Contributors
 
-**Team 1 - USD MS AAI 540 Spring 2026**
+**Team 1 - USD MS AAI 540 Spring 2026** - Israel Romero Olivera, Manikandan Perumal, Darin Verduzco
 - Data Pipeline Development
 - Model Training & Evaluation
 - CI/CD Implementation
