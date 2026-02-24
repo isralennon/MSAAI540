@@ -126,7 +126,7 @@ flowchart LR
 
 | Notebook | Model | Algorithm | Performance |
 |----------|-------|-----------|-------------|
-| `7a_Linear_regression.ipynb` | Linear Regression | SageMaker Linear Learner | Baseline model |
+| `7a_Linear_regression.ipynb` | Linear Regression | SageMaker Linear Learner | R² = 0.977, MSE = 6.600 |
 | `7b_Xgboost_regression.ipynb` | XGBoost | SageMaker XGBoost 1.7-1 | R² = 0.987, MSE = 2.72 |
 
 **Training Configuration:**
